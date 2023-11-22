@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Birthday.Start();
+            ArrayInversion.Start();
         }
     }
 }
+
