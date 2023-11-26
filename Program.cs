@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            ArrayInversion.Start();
+            Cakes.Start();
         }
     }
 }
