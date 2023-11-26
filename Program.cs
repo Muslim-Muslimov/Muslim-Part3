@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            BankExercise.Start();
+          BankExercise.Start();
         }
     }
 }
