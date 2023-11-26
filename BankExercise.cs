@@ -12,16 +12,19 @@ namespace Muslim_Part
         {
             Console.WriteLine("Введите сумму вклада: ");
             double summaVklada = Convert.ToDouble(Console.ReadLine());
-            double summaVkladamenshe100 = (summaVklada * 0.05) + summaVklada;
-            double summaVkladaot100do200 = (summaVklada * 0.07) + summaVklada;
-            double summaVkladabolshe200 = (summaVklada * 0.1) + summaVklada;
 
             if (summaVklada < 100)
-                Console.WriteLine($"{summaVkladamenshe100}");
+                summaVklada = (summaVklada * 0.05) + summaVklada;
+
             else if (100 < summaVklada && summaVklada < 200)
-                Console.WriteLine($"{summaVkladaot100do200}");
+                summaVklada = (summaVklada * 0.07) + summaVklada;
+
             else if (summaVklada > 200)
-                Console.WriteLine($"{summaVkladabolshe200}");
+                summaVklada = (summaVklada * 0.10) + summaVklada;
+
+            Console.WriteLine(summaVklada);
+
+
         }
     }
 }
